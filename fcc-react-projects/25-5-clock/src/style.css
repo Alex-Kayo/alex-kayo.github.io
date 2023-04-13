@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  font-family: 'Roboto Mono', monospace;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+button {
+  background-color: transparent;
+  color: white;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+#root {
+  background-color: #d9f99d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  min-width: 100%;
+  height: max-content;
+  min-height: 100%;
+  padding: 1rem;
+}
+
+#pomodoro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  background-color: #f59e0b;
+  color: white;
+  width: 24rem;
+  height: 24rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+#pomodoro-container::before {
+  content: '< 25 + 5 clock >';
+  position: absolute;
+  top: -2.5rem;
+  color: #f59e0b;
+  font-size: 2rem;
+}
+
+#length-control-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  height: max-content;
+}
+.length-control-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  border: solid 0.125rem white;
+  border-radius: 0.5rem;
+}
+.length-control-label {
+  font-size: 1rem;
+}
+.length-control-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+}
+.length-control-decrement {
+  padding-top: 0.25rem;
+}
+.length-control-increment {
+  padding-bottom: 0.25rem;
+}
+
+#timer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+#timer-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 2rem;
+}
+#time-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 4rem;
+  border: solid 0.125rem white;
+  border-radius: 0.5rem;
+}
+
+#timer-control-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+#timer-control-container i {
+  font-size: 1.5rem;
+  cursor: pointer;
+}

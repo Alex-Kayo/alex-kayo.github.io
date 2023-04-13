@@ -1,0 +1,8 @@
+html, body {
+  height: 100%;
+}
+
+#quote-box {
+  width: 32rem;
+  min-height: 10rem;
+}
